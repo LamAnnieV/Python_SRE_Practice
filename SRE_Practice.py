@@ -15,6 +15,30 @@ is_student = False
 x = {"name" : "John", "age" : 36}
 y = ["apple", "banana", "cherry"]
 
+### frozenset
+
+#A frozenset in Python is an immutable version of a set. While sets in Python are mutable (you can add or remove elements), frozensets are immutable, meaning their elements cannot be changed after the frozenset is created.
+
+#You can create a frozenset using the frozenset() constructor, similar to how you create a set with the set() constructor. Once created, you cannot add or remove elements from a frozenset.
+
+#Here's a simple example:
+
+# Creating a frozenset
+frozen_set = frozenset([1, 2, 3, 4, 5])
+
+# Trying to add an element will result in an error
+# frozen_set.add(6)  # This would raise an AttributeError
+
+# Trying to remove an element will also result in an error
+# frozen_set.remove(3)  # This would raise an AttributeError
+
+# You can perform set operations on frozensets
+another_frozen_set = frozenset([4, 5, 6, 7, 8])
+
+# Union
+union_set = frozen_set.union(another_frozen_set)
+print(union_set)  # Output: frozenset({1, 2, 3, 4, 5, 6, 7, 8})
+
 f = frozenset({"apple", "banana", "cherry"})
 r = range(6)
 
