@@ -200,26 +200,26 @@ print(message)
 # String Manipulation:
 # String methods
 text = " Hello, World! "
-trimmed_text = text.strip()
+trimmed_text = text.strip()  # removes leading and trailing spaces
 words = text.split(',')
-formatted_text = "Name: {}, Age: {}".format("John", 25)
+formatted_text = "Name: {}, Age: {}".format("John", 25)  #Result:  Name: John, Age: 25
 
 # Concatenation and formatting
 full_name = "John" + " " + "Smith"
-formatted_greeting = f"Hello, {name}"
+formatted_greeting = f"Hello, {full_name}"  # Hello, John Smith
 
 # Printing:
 a = "Hello"
 print(a)
 
 b = "Hello, World!"
-print(b[2:5])
+print(b[2:5])  #Result:  llo  #the first index is inclusive, the second one is exclusive
 
 b = "Hello, World!"
-print(b[:5])
+print(b[:5])  #Result:  Hello
 
 b = "Hello, World!"
-print(b[2:])
+print(b[2:])  #Result:  llo, World!
 
 # Modify Strings
 a = "Hello, World!"
@@ -234,6 +234,8 @@ print(a.lower())
 # HackerRank
 # GeeksforGeeks
 # Python's official documentation
+
+
 Before working on the solution:
 -	These things should be straightforward and you should all know these topics 
 -	So No Use of Internet to find any help. 🙂
