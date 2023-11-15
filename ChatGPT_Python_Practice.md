@@ -38,9 +38,18 @@ for num in list:
 
 
 ## Print each character in the string "Hello" using a for loop.
-String = "Hello"
+string = "Hello"
+for element in range(0, len(string)):
+  print(string[element])
 
+string = "Hello"
+index = 0
 
+while index <len(string):
+  print(string[index])
+  index += i
+
+  
 ## While loops:
 
 ## Print the numbers from 1 to 10 using a while loop.
